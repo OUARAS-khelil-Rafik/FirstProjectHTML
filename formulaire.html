@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Formulaire" /> <meta name="keywords" content="HTML5" /> <meta name="author" content="Logan Ouaras" />
+		<title>
+			Formulaire
+		</title>
+	</head>
+	<body>
+		<h1>Mon premier formulaire</h1>
+		<form action="formulaire.html" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Données personnelles</legend>
+				<input type="radio" id="Civilité 01" name="Civilité">
+				<label for="Civilité">Civilité 01</label><br/>
+				<input type="radio" id="Civilité 02" name="Civilité">
+				<label for="Civilité">Civilité 02</label><br/>
+				<input type="radio" id="Civilité 03" name="Civilité">
+				<label for="Civilité">Civilité 03</label>
+				<br>
+				<label for="nom">Nom</label>
+				<input id="nom" type="text" placeholder="Tapez votre nom">
+				<label for="prénom">Prénom</label>
+				<input id="prénom" type="text" placeholder="Tapez votre prénom">
+				<label for="date">Date de naissance</label>
+				<input id="date" type="date">
+				<br>
+				<label for="email">Email</label>
+				<input id="email" type="email">
+				<label for="url">URL</label>
+				<input id="url" type="url">
+				<br>
+				<label for="passe">Mot de passe</label>
+				<input id="passe" type="password">
+				<br>
+				<input type="checkbox" value="Pay 01"> Algerie
+				<br/>
+				<input type="checkbox" value="Pay 02"> France
+				<br/>
+				<input type="checkbox" value="Pay 03"> Italy
+				<br>
+				<textarea cols="30" rows="2">Adresse Postale</textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Connaissances</legend>
+				<label for="niveau">Niveau HTML</label>
+					<input type="range" id="niveau" name="niveau" min="0" max="10" step="1">
+				<br>
+				<label>Les langages côté client :</label>
+				<br>
+				<input type="checkbox" value="html"> HTML
+				<br/>
+				<input type="checkbox" value="css"> CSS
+				<br/>
+				<input type="checkbox" value="javascript"> JavaScript
+				<br/>
+				<input type="checkbox" value="xml"> XML
+				<br>
+				<label>Les langages serveur :</label><br>
+					<select name="Les langages serveur" multiple="multiple">
+						<option>PHP</option>
+						<option>ASP</option>
+						<option>JSP</option>
+						<option>Python</option>
+					</select>
+				<br>
+				<textarea cols="50" rows="5"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Composant d’envoi de fichiers</legend>
+				<label>Uploader un fichier</label>
+				<input type="file" name="fileUpload" id="fileUpload" size="10"><br>
+				<input id="max_id" type="hidden" name="MAX_FILE_SIZE" value="10240"/>
+			</fieldset>
+			<button>Soumettre</button>
+			<button>Reset</button>
+		</form>
+	</body>
+</html>
